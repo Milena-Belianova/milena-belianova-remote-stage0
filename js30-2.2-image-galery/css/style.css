@@ -1,0 +1,218 @@
+/* comfortaa-600 - latin */
+@font-face {
+  font-family: "Comfortaa";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../assets/fonts/comfortaa-v37-latin-600.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("../assets/fonts/comfortaa-v37-latin-600.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../assets/fonts/comfortaa-v37-latin-600.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("../assets/fonts/comfortaa-v37-latin-600.woff") format("woff"),
+    /* Modern Browsers */ url("../assets/fonts/comfortaa-v37-latin-600.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../assets/fonts/comfortaa-v37-latin-600.svg#Comfortaa") format("svg"); /* Legacy iOS */
+}
+/* comfortaa-700 - latin */
+@font-face {
+  font-family: "Comfortaa";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../assets/fonts/comfortaa-v37-latin-700.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("../assets/fonts/comfortaa-v37-latin-700.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../assets/fonts/comfortaa-v37-latin-700.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("../assets/fonts/comfortaa-v37-latin-700.woff") format("woff"),
+    /* Modern Browsers */ url("../assets/fonts/comfortaa-v37-latin-700.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../assets/fonts/comfortaa-v37-latin-700.svg#Comfortaa") format("svg"); /* Legacy iOS */
+}
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  max-width: 1280px;
+  margin: 0 auto;
+  font-family: "Comfortaa";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  color: #000;
+}
+
+.container {
+  min-height: 75px;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  border-bottom: 5px solid orange;
+}
+
+.icon-camera {
+  color: orange;
+  transition: all 0.6s ease-in-out;
+}
+
+.icon-camera:hover {
+  filter: invert(70%) sepia(72%) saturate(2726%) hue-rotate(358deg)
+    brightness(150%) contrast(108%);
+}
+
+.search-box {
+  width: 350px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.input {
+  width: 100%;
+  border-radius: 25px 0 0 25px;
+  font-size: 16px;
+  border: 1px solid orange;
+  padding: 8px 12px;
+  transition: all 0.3s ease-in-out;
+  outline: none;
+  color: #000;
+}
+
+.input:focus {
+  box-shadow: 0 0 5px orange;
+  border: 1px solid orange;
+}
+
+.btn-clear {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 15%;
+  right: 22%;
+  background-color: #fff;
+  border: 0;
+  display: flex;
+  padding: 0;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-clear {
+  width: 20px;
+  height: 20px;
+  display: block;
+  background-image: url("../assets/svg/xmark-solid.svg");
+  background-size: 8px;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.icon-clear:hover {
+  filter: brightness(20%);
+}
+
+.btn-search {
+  width: 76px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 3px orange;
+  border: 1px solid orange;
+  background-color: orange;
+  border-radius: 0 25px 25px 0;
+}
+
+.btn-search:hover {
+  filter: brightness(93%);
+}
+
+.icon-search {
+  font-size: 16px;
+  color: rgb(22, 22, 22);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-search:hover .icon-search {
+  color: #fff;
+}
+
+.gallery-container {
+  padding: 0 0 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+.gallery-img {
+  width: 380px;
+  height: auto;
+  margin-top: 15px;
+  background-position: center;
+  background-size: cover;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.gallery-img:hover {
+  transform: scale(1.4);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.footer-container {
+  border-bottom: none;
+}
+
+.footer-data {
+  display: flex;
+  gap: 20px;
+  font-size: 24px;
+  font-weight: 700;
+  color: #333;
+  color: rgb(22, 22, 22);
+}
+
+.github {
+  text-decoration: none;
+  color: orange;
+  transition: all 0.6s ease-in-out;
+}
+
+.github:hover {
+  filter: invert(70%) sepia(72%) saturate(2726%) hue-rotate(358deg)
+    brightness(140%) contrast(108%);
+}
+
+.rss-logo {
+  width: 135px;
+  height: 50px;
+  background-size: contain;
+  background-image: url("../assets/svg/rss-logo.svg");
+  transition: all 0.6s ease-in-out;
+}
+
+.rss-logo:hover {
+  filter: invert(70%) sepia(72%) saturate(2726%) hue-rotate(358deg)
+    brightness(100%) contrast(108%);
+}

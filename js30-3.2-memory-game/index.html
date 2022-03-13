@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Festive&family=Pacifico&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>memory-game</title>
+</head>
+
+<body>
+
+    <!-- The Modal -->
+    <div class="modal">
+        <div class="modal-content">
+            <div class="modal-header modal-container">
+                <h2>You WON!!!</h2>
+                <span class="close">&times;</span>
+            </div>
+
+            <div class="modal-body modal-container">
+                <div class="modal-data">
+                    <div class="moves">Moves: <span class="moves-count">0</span></div>
+                    <div class="timer">, Time: <span class="minute">00</span>:<span class="second">00</span></div>
+                </div>
+                <div class="leaderboard-container">
+                    <div class="leaderboard"> Leaderboard</div>
+                    <ol class="list"></ol>
+                </div>
+
+                <div class="modal-footer modal-container">
+                    <button class="btn back">Back</button>
+                    <button class="btn play-again">Play again</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <div class="container header-container">
+            <i class="fas fa-crow logo"></i>
+            <h1> Memory Game</h1>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="game-add">
+            <button class="btn refresh">Refresh</button>
+            <div class="data">
+                <div class="moves">Moves: <span class="moves-count">0</span></div>
+                <div class="timer">Time: <span class="minute">00</span>:<span class="second">00</span></div>
+            </div>
+            <div class="card-pairs-num">
+                <div class="select-num">Select number of card pairs: </div>
+                <div class="btns-num-container">
+                    <button class="pair-num pair-num-three">3</button>
+                    <button class="pair-num pair-num-six">6</button>
+                    <button class="pair-num pair-num-ten">10</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="memory-game">
+            <div class="memory-card" data-framework="cat">
+                <i class="front-face fas fa-cat"></i>
+                <i class="back-face fas fa-paw"></i>
+            </div>
+            <div class="memory-card" data-framework="cat">
+                <i class="front-face fas fa-cat"></i>
+                <i class="back-face fas fa-paw"></i>
+            </div>
+            <div class="memory-card" data-framework="fish">
+                <i class="front-face fas fa-fish"></i>
+                <i class="back-face fas fa-paw"></i>
+            </div>
+            <div class="memory-card" data-framework="fish">
+                <i class="front-face fas fa-fish"></i>
+                <i class="back-face fas fa-paw"></i>
+            </div>
+            <div class="memory-card" data-framework="dove">
+                <i class="front-face fas fa-dove"></i>
+                <i class="back-face fas fa-paw"></i>
+            </div>
+            <div class="memory-card" data-framework="dove">
+                <i class="front-face fas fa-dove"></i>
+                <i class="back-face fas fa-paw"></i>
+            </div>
+            <div class="memory-card" data-framework="dog">
+                <i class="front-face fas fa-dog"></i>
+                <i class="back-face fas fa-paw"></i>
+            </div>
+            <div class="memory-card" data-framework="dog">
+                <i class="front-face fas fa-dog"></i>
+                <i class="back-face fas fa-paw"></i>
+            </div>
+            <div class="memory-card" data-framework="dragon">
+                <i class="front-face fas fa-dragon"></i>
+                <i class="back-face fas fa-paw"></i>
+            </div>
+            <div class="memory-card" data-framework="dragon">
+                <i class="front-face fas fa-dragon"></i>
+                <i class="back-face fas fa-paw"></i>
+            </div>
+            <div class="memory-card" data-framework="frog">
+                <i class="front-face fas fa-frog"></i>
+                <i class="back-face fas fa-paw"></i>
+            </div>
+            <div class="memory-card" data-framework="frog">
+                <i class="front-face fas fa-frog"></i>
+                <i class="back-face fas fa-paw"></i>
+            </div>
+            <div class="memory-card" data-framework="hippo">
+                <i class="front-face fas fa-hippo"></i>
+                <i class="back-face fas fa-paw"></i>
+            </div>
+            <div class="memory-card" data-framework="hippo">
+                <i class="front-face fas fa-hippo"></i>
+                <i class="back-face fas fa-paw"></i>
+            </div>
+            <div class="memory-card" data-framework="horse">
+                <i class="front-face fas fa-horse"></i>
+                <i class="back-face fas fa-paw"></i>
+            </div>
+            <div class="memory-card" data-framework="horse">
+                <i class="front-face fas fa-horse"></i>
+                <i class="back-face fas fa-paw"></i>
+            </div>
+            <div class="memory-card" data-framework="kiwi-bird">
+                <i class="front-face fas fa-kiwi-bird"></i>
+                <i class="back-face fas fa-paw"></i>
+            </div>
+            <div class="memory-card" data-framework="kiwi-bird">
+                <i class="front-face fas fa-kiwi-bird"></i>
+                <i class="back-face fas fa-paw"></i>
+            </div>
+            <div class="memory-card" data-framework="spider">
+                <i class="front-face fas fa-spider"></i>
+                <i class="back-face fas fa-paw"></i>
+            </div>
+            <div class="memory-card" data-framework="spider">
+                <i class="front-face fas fa-spider"></i>
+                <i class="back-face fas fa-paw"></i>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-container">
+            <div class="footer-data">
+                <p>©</p>
+                <p>2022</p>
+                <a href="https://github.com/Milena-Belianova" class="github"> github</a>
+            </div>
+            <a href="https://rs.school/js-stage0/" class="rss-logo"></a>
+
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
